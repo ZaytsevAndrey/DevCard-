@@ -1,0 +1,128 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7); /* Легкий білий прозорий фон */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0; /* Верхній та нижній відступ */
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px; /* Відступи з боків */
+
+    @media (max-width: 768px) {
+      padding: 0 20px; /* Менші відступи на мобільних пристроях */
+    }
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar__logo {
+    width: 60px;
+    height: 60px;
+    background: url('/public/images/logo.png') center/cover no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid #005f99;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+
+  .navbar__menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: #005f99;
+      font-size: 1rem;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #0073e6;
+        cursor: pointer;
+      }
+
+      &.active {
+        color: #0073e6;
+        border-bottom: 2px solid #0073e6;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #0073e6;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  .navbar__toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #005f99;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0073e6;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar__menu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      flex-direction: column;
+      gap: 15px;
+      width: 200px;
+      padding: 15px;
+      display: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+
+      li a {
+        color: #005f99;
+
+        &:hover {
+          color: #0073e6;
+        }
+      }
+    }
+
+    .navbar__menu.active {
+      display: flex;
+    }
+
+    .navbar__toggle {
+      display: block;
+    }
+  }
+}

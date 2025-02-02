@@ -1,0 +1,103 @@
+.wrapper {
+  margin: 20px 40px;
+  scroll-margin-top: 120px;
+}
+
+.contacts {
+  margin: 40px auto;
+  padding: 20px calc(5% + 20px);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #555;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  max-width: 1200px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #005f99;
+  }
+
+  .contacts__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Сітка з двома колонками */
+    gap: 20px;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* На мобільних пристроях одна колонка */
+    }
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .contacts__icon {
+      font-size: 1.5rem;
+      color: #0073e6;
+    }
+
+    a {
+      color: #005f99;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .contacts__item:hover {
+    background-color: #f0f0f0;
+  }
+
+  .contacts__resume-btn {
+    margin-top: 20px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #005bb5;
+    }
+
+    @media (max-width: 768px) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .contacts__resume-icon {
+      font-size: 1.2rem;
+    }
+  }
+}
