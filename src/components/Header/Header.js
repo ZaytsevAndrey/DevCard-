@@ -6,7 +6,7 @@ const Header = () => (
         <div className="header__background"></div>
         <div className="header__content">
             <img
-                src="/images/profile.jpg"
+                src="/images/profile.JPG"
                 alt="Andriy Zaytsev"
                 className="header__photo"
             />
