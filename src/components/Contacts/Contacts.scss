@@ -31,12 +31,11 @@
 
   .contacts__list {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Сітка з двома колонками */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    flex-direction: column;
 
     @media (max-width: 768px) {
-      grid-template-columns: 1fr; /* На мобільних пристроях одна колонка */
+      grid-template-columns: 1fr;
     }
   }
 
@@ -54,6 +53,14 @@
     .contacts__icon {
       font-size: 1.5rem;
       color: #0073e6;
+    }
+
+    .contacts__label {
+      display: block;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     a {
@@ -82,7 +89,7 @@
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s;
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 
