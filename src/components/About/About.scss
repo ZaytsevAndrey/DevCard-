@@ -1,3 +1,5 @@
+@use '../../styles/_variables.scss' as vars;
+
 .wrapper {
   margin: 20px 40px;
   scroll-margin-top: 120px;
@@ -6,22 +8,26 @@
 .about {
   margin: 40px auto;
   padding: 20px 30px;
-  background-color: #f9f9f9;
+  background-color: vars.$background-light; // Фон секції
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #555;
-  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // Більш темна тінь для контрасту
+  color: vars.$text-primary; // Основний текст
   line-height: 1.6;
   max-width: 1200px;
   transition: box-shadow 0.3s ease;
-}
 
-.about:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
 
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #005f99;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: vars.$keyword; // Синій, як у VS Code
+  }
+
+  p {
+    font-size: 1rem;
+    color: vars.$text-secondary; // Світліший текст для менших деталей
+  }
 }

@@ -1,3 +1,5 @@
+@use '../../styles/_variables.scss' as vars;
+
 .wrapper {
   margin: 20px 40px;
   scroll-margin-top: 120px;
@@ -6,58 +8,59 @@
 .skills {
   margin: 40px auto;
   padding: 20px 30px;
-  background-color: #f9f9f9;
+  background-color: vars.$background-light; // Світліший фон для секції
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: #555;
-  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // Тінь для контрасту
+  color: vars.$text-primary;
   line-height: 1.6;
   max-width: 1200px;
   transition: box-shadow 0.3s ease;
-}
 
-.skills:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
 
-.skills h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #005f99;
-}
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: vars.$keyword; // Колір заголовка (як у VS Code)
+  }
 
-.skills__category {
-  margin-bottom: 30px;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+  .skills__category {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid vars.$text-secondary;
+  }
 
-.skills__category:last-child {
-  border-bottom: none;
-}
+  .skills__category:last-child {
+    border-bottom: none;
+  }
 
-.skills__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-.skills__item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
+  .skills__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: vars.$background; // Темний фон для карток
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    color: vars.$function; // Колір тексту, як у VS Code для функцій
 
-.skills__item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+      background: vars.$background-light; // Світліший фон при наведенні
+    }
+  }
 
-.skills__icon {
-  font-size: 1.5rem;
-  color: #0073e6;
+  .skills__icon {
+    font-size: 1.5rem;
+    color: vars.$constant; // Колір іконок, як у VS Code для констант
+  }
 }
