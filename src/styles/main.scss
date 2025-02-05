@@ -1,7 +1,21 @@
 @use './_variables.scss' as vars;
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../../public/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('../../public/fonts/webfonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg, #181818, #1e1e1e);
@@ -19,3 +33,4 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+

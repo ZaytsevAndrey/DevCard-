@@ -10,7 +10,7 @@ const Skills = () => (
             <div className="skills__category">
                 <h3>Core Skills</h3>
                 <div className="skills__list">
-                    <div className="skills__item"><FaJsSquare className="skills__icon" /> JavaScript (ES6+), TypeScript (Basic)</div>
+                    <div className="skills__item"><FaJsSquare className="skills__icon" /> JavaScript (ES6+), TypeScript</div>
                     <div className="skills__item"><FaReact className="skills__icon" /> React, Redux</div>
                     <div className="skills__item"><FaCode className="skills__icon" /> RxJS</div>
                 </div>
@@ -29,7 +29,7 @@ const Skills = () => (
                 <h3>Frameworks & Libraries</h3>
                 <div className="skills__list">
                     <div className="skills__item"><FaMobileAlt className="skills__icon" /> React Native</div>
-                    <div className="skills__item"><FaReact className="skills__icon" /> Next.js, AngularJS</div>
+                    <div className="skills__item"><FaReact className="skills__icon" /> AngularJS</div>
                     <div className="skills__item"><FaCode className="skills__icon" /> Lodash, Webpack, Babel</div>
                     <div className="skills__item"><FaCode className="skills__icon" /> Material UI, SCSS</div>
                 </div>

@@ -12,7 +12,6 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   color: vars.$text-primary; /* Основний текст */
-  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   max-width: 1200px;
   position: relative;
@@ -80,7 +79,7 @@
       transition: color 0.2s ease;
 
       &:hover {
-        color: vars.$keyword; /* Легка зміна кольору */
+        //color: vars.$keyword; /* Легка зміна кольору */
       }
     }
   }

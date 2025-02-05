@@ -51,40 +51,36 @@
 }
 
 .header__info {
-  text-align: center;
+  text-align: left;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.header__text {
+.header__static-text {
   font-size: 2rem;
   font-weight: bold;
   color: vars.$primary;
-  border-right: 2px solid vars.$accent;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  max-width: 500px;
-  padding: 10px;
-
-  animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
-
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-    max-width: 320px;
-  }
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.header__dynamic-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: vars.$primary;
+  margin-top: 10px;
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+.highlight {
+  color: vars.$function;
+}
+
+@media (max-width: 768px) {
+  .header__static-text {
+    font-size: 1.3rem;
+  }
+
+  .header__dynamic-text {
+    font-size: 1.1rem;
   }
 }
