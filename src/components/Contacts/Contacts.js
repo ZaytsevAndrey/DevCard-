@@ -3,8 +3,8 @@ import { FaEnvelope, FaLinkedin, FaTelegram, FaPhone, FaDownload } from "react-i
 import "./Contacts.scss";
 
 const Contacts = () => (
-    <div className="wrapper" id="contacts">
-        <section className="contacts">
+    <section id="contacts">
+        <div className="contacts container">
             <h2>Contact Me</h2>
             <div className="contacts__list">
                 <div
@@ -49,15 +49,15 @@ const Contacts = () => (
                 </div>
             </div>
             <a
-                href="/public/Andrii_Zaitsev_Resume.pdf"
+                href="/Andrii_Zaitsev_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contacts__resume-btn"
             >
                 <FaDownload className="contacts__resume-icon" /> Download CV
             </a>
-        </section>
-    </div>
+        </div>
+    </section>
 );
 
 export default Contacts;

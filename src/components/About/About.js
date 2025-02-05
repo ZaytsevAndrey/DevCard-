@@ -2,8 +2,8 @@ import React from "react";
 import "./About.scss";
 
 const About = () => (
-    <div className="wrapper" id="about">
-        <section className="about">
+    <section id="about">
+        <div className="about container">
             <h2>About Me</h2>
             <p>
                 I am passionate about programming and truly value the people I work with in any company.
@@ -18,8 +18,8 @@ const About = () => (
                 Working on meaningful projects that solve real-world problems motivates me,
                 and I am always eager to collaborate with like-minded professionals.
             </p>
-        </section>
-    </div>
+        </div>
+    </section>
 );
 
 export default About;

@@ -3,8 +3,8 @@ import { FaReact, FaJsSquare, FaNodeJs, FaDatabase, FaTools, FaCode, FaMobileAlt
 import "./Skills.scss";
 
 const Skills = () => (
-    <div className="wrapper"  id="skills">
-        <section className="skills">
+    <section id="skills">
+        <div className="skills container">
             <h2>Skills</h2>
 
             <div className="skills__category">
@@ -52,8 +52,8 @@ const Skills = () => (
                     <div className="skills__item"><FaTools className="skills__icon" /> Docker (Basic)</div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 );
 
 export default Skills;

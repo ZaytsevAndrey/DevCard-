@@ -1,10 +1,5 @@
 @use '../../styles/_variables.scss' as vars;
 
-.wrapper {
-  margin: 20px 40px;
-  scroll-margin-top: 120px;
-}
-
 .contacts {
   margin: 40px auto;
   padding: 20px 30px;
@@ -17,19 +12,21 @@
   position: relative;
   transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 
-  @media (max-width: 768px) {
+  @media (max-width: 870px) {
     padding: 20px 20px;
+  }
+  @media (max-width: 420px) {
     font-size: 12px;
   }
 
   &:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35); /* Менш агресивний ефект */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
   }
 
   h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: vars.$keyword; /* Колір заголовка */
+    color: vars.$keyword;
   }
 
   .contacts__list {
@@ -37,7 +34,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 870px) {
       grid-template-columns: 1fr;
     }
   }
@@ -54,13 +51,13 @@
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 
     &:hover {
-      background-color: rgba(vars.$background-light, 0.6); /* Легке підсвічування */
+      background-color: rgba(vars.$background-light, 0.6);
       box-shadow: 0 3px 6px rgba(255, 255, 255, 0.15);
     }
 
     .contacts__icon {
       font-size: 1.4rem;
-      color: vars.$constant; /* Колір іконок */
+      color: vars.$constant;
     }
 
     .contacts__label {
@@ -78,10 +75,6 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.2s ease;
-
-      &:hover {
-        //color: vars.$keyword; /* Легка зміна кольору */
-      }
     }
   }
 

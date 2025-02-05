@@ -2,8 +2,8 @@ import React from "react";
 import "./Experience.scss";
 
 const Experience = () => (
-    <div className="wrapper" id="experience">
-        <section className="experience">
+    <section id="experience">
+        <div className="experience container">
             <h2>Experience</h2>
 
             <div className="experience__item">
@@ -57,8 +57,8 @@ const Experience = () => (
                     <li>Ensured scalability and flexibility for future updates while maintaining a user-friendly experience.</li>
                 </ul>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 );
 
 export default Experience;
