@@ -19,6 +19,7 @@
 
   @media (max-width: 768px) {
     padding: 20px 20px;
+    font-size: 12px;
   }
 
   &:hover {
@@ -27,7 +28,7 @@
 
   h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: vars.$keyword; /* Колір заголовка */
   }
 
@@ -111,6 +112,10 @@
 
     .contacts__resume-icon {
       font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
     }
   }
 }
