@@ -45,7 +45,7 @@ const Contacts = () => (
                 >
                     <FaPhone className="contacts__icon" />
                     <span className="contacts__label">Phone:</span>
-                    <a href="tel:+380997814218">+38 099 781 42 18</a>
+                    <a href="tel:+35797606771">+357 (97) 606 771</a>
                 </div>
             </div>
             <a
