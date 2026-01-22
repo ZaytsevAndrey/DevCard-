@@ -38,16 +38,19 @@ const Navbar = () => {
                         <a onClick={scrollToTop}>Home</a>
                     </li>
                     <li>
-                        <a onClick={() => handleScroll("about")}>About</a>
+                        <a onClick={() => handleScroll("contacts")}>Contacts</a>
                     </li>
                     <li>
                         <a onClick={() => handleScroll("experience")}>Experience</a>
                     </li>
                     <li>
+                        <a onClick={() => handleScroll("education")}>Education</a>
+                    </li>
+                    <li>
                         <a onClick={() => handleScroll("skills")}>Skills</a>
                     </li>
                     <li>
-                        <a onClick={() => handleScroll("contacts")}>Contacts</a>
+                        <a onClick={() => handleScroll("about")}>About</a>
                     </li>
                 </ul>
 
