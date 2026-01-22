@@ -56,4 +56,8 @@
       color: vars.$text-secondary; // Менший текст для списків
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 10px 10px;
+  }
 }

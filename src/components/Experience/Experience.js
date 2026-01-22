@@ -17,7 +17,6 @@ const Experience = () => (
                     <li>Led frontend development as a core team member, taking full ownership of features from conception to deployment with strong self-management and autonomy.</li>
                     <li>Built scalable React applications using TypeScript, ensuring type safety and maintainable code architecture.</li>
                     <li>Actively leveraged AI development assistants to accelerate development cycles while maintaining high code quality standards.</li>
-                    <li>Collaborated closely with product and design teams to translate requirements into efficient, user-friendly interfaces.</li>
                     <li>Established development best practices, code review processes, and technical standards for the frontend team.</li>
                     <li>Delivered high-quality features under tight deadlines, demonstrating strong problem-solving and adaptability in a fast-paced startup environment.</li>
                 </ul>
