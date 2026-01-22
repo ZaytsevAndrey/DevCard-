@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Header.scss";
 
 const Header = () => {
-    const line1 = "Software Engineer";
-    const line2 = "Specializing in React.js";
+    const line1 = "Senior Software Engineer";
+    const line2 = "Open to New Opportunities";
 
     const [typedText, setTypedText] = useState("");
     const [currentLine, setCurrentLine] = useState(1);
@@ -63,7 +63,7 @@ const Header = () => {
                     <p className="header__dynamic-text">
                         { showSecondLine
                             ? showThirdLine
-                                ? (<>Specializing in <span className="highlight">React.js</span></>)
+                                ? (<>Open to <span className="highlight">New Opportunities</span></>)
                                 : (typedText)
                             : null
                         }

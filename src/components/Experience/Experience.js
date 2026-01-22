@@ -7,6 +7,23 @@ const Experience = () => (
             <h2>Experience</h2>
 
             <div className="experience__item">
+                <h3>Senior Frontend Engineer</h3>
+                <p className="experience__company">JOMY AI | Aug 2025 – Present</p>
+                <p>
+                    JOMY AI is an innovative AI-powered startup developing cutting-edge solutions. As a key member of a small, agile frontend team,
+                    I took on significant responsibilities and ownership of the product's frontend architecture and development.
+                </p>
+                <ul>
+                    <li>Led frontend development as a core team member, taking full ownership of features from conception to deployment with strong self-management and autonomy.</li>
+                    <li>Built scalable React applications using TypeScript, ensuring type safety and maintainable code architecture.</li>
+                    <li>Actively leveraged AI development assistants to accelerate development cycles while maintaining high code quality standards.</li>
+                    <li>Collaborated closely with product and design teams to translate requirements into efficient, user-friendly interfaces.</li>
+                    <li>Established development best practices, code review processes, and technical standards for the frontend team.</li>
+                    <li>Delivered high-quality features under tight deadlines, demonstrating strong problem-solving and adaptability in a fast-paced startup environment.</li>
+                </ul>
+            </div>
+
+            <div className="experience__item">
                 <h3>Senior Software Engineer (React/Redux)</h3>
                 <p className="experience__company">Innovecs/Ummanu | Jan 2018 – Feb 2025</p>
                 <p>
