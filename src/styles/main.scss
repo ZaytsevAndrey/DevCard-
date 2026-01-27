@@ -21,6 +21,35 @@ body {
   background: linear-gradient(180deg, #181818, #1e1e1e);
 }
 
+// Стилі для скролбара - тільки бігунок видимий
+// Webkit браузери (Chrome, Safari, Edge)
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; // Трек невидимий
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
+  }
+}
+
+// Firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
 h1, h2 {
   margin-top: 10px;
 }
@@ -35,7 +64,27 @@ h1, h2 {
 }
 
 section {
-  margin: 20px 40px;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
   scroll-margin-top: 120px;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 80px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
