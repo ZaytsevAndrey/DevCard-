@@ -44,10 +44,30 @@ body {
   }
 }
 
+// Явно таргетимо root-scrollbar (на десктопі інколи стилізується тільки так)
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
 // Firefox
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+html {
+  scrollbar-width: thin;
 }
 
 h1, h2 {

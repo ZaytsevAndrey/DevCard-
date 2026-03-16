@@ -8,7 +8,7 @@ const Experience = () => (
 
             <div className="experience__item">
                 <h3>Senior Frontend Engineer</h3>
-                <p className="experience__company">JOMY AI | Aug 2025 – Present</p>
+                <p className="experience__company">JOMY AI | Aug 2025 – Feb 2026</p>
                 <p>
                     JOMY AI is an innovative AI-powered startup developing cutting-edge solutions. As a key member of a small, agile frontend team,
                     I took on significant responsibilities and ownership of the product's frontend architecture and development.
